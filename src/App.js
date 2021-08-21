@@ -3,7 +3,7 @@ import { commerce } from './lib/commerce';
 //import Products from './components/Products/Products';
 //import Navbar from './components/Navbar/Navbar';
 
-import { Products, Navbar, Cart, CheckOut } from './components';
+import { Products, Navbar, Cart, Checkout } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -67,7 +67,7 @@ const App = () => {
                             handleEmptyCart={handleEmptyCart}
                         />
                     </Route>
-                    <Route exact path="/checkout">
+                    <Route path="/checkout" exact>
                         <Checkout />
                     </Route>
                 </Switch>
