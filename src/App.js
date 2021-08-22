@@ -45,6 +45,7 @@ const App = () => {
 
         setCart(cart);
     }
+
     useEffect(() => {
         fetchProducts();
         fetchCart();
@@ -68,7 +69,7 @@ const App = () => {
                         />
                     </Route>
                     <Route path="/checkout" exact>
-                        <Checkout />
+                        <Checkout cart={cart} />
                     </Route>
                 </Switch>
             </div>
